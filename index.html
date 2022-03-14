@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link rel="styelsheet" href="style.css">
+</head>
+<style>
+    .main{
+        color:white;
+        text-align: center;
+        padding: 0;
+    }
+    .main h1{
+        padding-top:10px ;
+    }
+    .main p{
+        font-style: italic;
+    }
+    
+    body{
+        font-family: sans-serif;
+        background-image: url(hydra.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-color: rgb(109, 151, 42);
+        margin: 0;
+    }
+    .container{
+        width: 50%;
+    }
+    .section{
+        display: flex;
+        margin: 0;
+        
+    }
+    .form{
+        color: white;
+        background-color: rgba(62, 90, 62, 0.867);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300; 
+        padding: 20px 20px;
+        border: 10px;
+    }
+    li{
+        color: black;
+    }
+    
+    .input-group{
+        width: 100%;
+    }
+    /*
+    form{
+        border: 0px solid#f1f1f1;
+    }
+    
+    input[type=text], input[type=email], input[type=number], input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        display: inline-block;
+        box-sizing: border-box;
+    }*/
+</style>
+<body>
+    
+<div class="container">
+    <div class="main">
+        <h1>CapacityBay Survey Form</h1>
+        <p>Thank you for taking the Time to help us improve this platform</p>
+    </div>
+    <form class="form" action="#" >
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter your Name" name="name">
+          </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your Email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="age">Age(Optional)</label>
+            <input type="number" class="form-control" id="pwd" placeholder="Enter your Age" name="age">
+        </div>
+        
+        <p>Which Option best describe your current Role?</p>
+          <select class="form-control" aria-label="Default select example">
+            <option disabled>Select Current Role</option>
+            <option value="Student">Student</option>
+            <option value="Job">Full time Job</option>
+            <option value="Learner">Full Time Learner</option>
+            <option value="Prefer">Prefer not to say</option>
+          </select>
+        <br>
+        <div class="form-check">
+            <p>Would you recommend CapacityBay to a Friend?</p>
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Definitely
+            <label class="form-check-label" for="radio1"></label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Maybe
+            <label class="form-check-label" for="radio2"></label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Not sure
+            <label class="form-check-label" for="radio3"></label>
+          </div>
+          <br>
+          <p>What is your Favorite feature for CapacityBay?</p>
+          <select class="form-control" aria-label="Default select example">Challenges
+            <option disabled>Select an Open</option>
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open source">Open Source</option>
+          </select>
+
+        <div class="checkbox">
+            <p>What would you like to see Improved? (Check all that apply)</p>
+            <label>
+                <input type="checkbox">Front-end Projects <br>
+                <input type="checkbox">Back-end Projects <br>
+                <input type="checkbox">Data Visualization <br>
+                <input type="checkbox">Challenges <br>
+                <input type="checkbox">Open source community<br>
+                <input type="checkbox">Gitter help rooms <br>
+                <input type="checkbox">video <br>
+                <input type="checkbox">City Meetups <br>
+                <input type="checkbox">Wiki <br>
+                <input type="checkbox">Forum <br>
+                <input type="checkbox">Additional Courses
+            </label>
+        </div>
+        <div class="input-group">
+            <p>Any comments or suggestions?</p>
+            <textarea class="form-control" aria-label="With textarea" placeholder="Enter your comment here..."></textarea>
+          </div><br>
+       
+        <button type="submit" class="btn btn-success" style="width: 100%;">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

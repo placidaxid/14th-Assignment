@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    background-color: red;
+}
+    .main{
+        color:white;
+        text-align: center;
+        padding: 0;
+    }
+    .main h1{
+        padding-top:10px ;
+    }
+    .main p{
+        font-style: italic;
+    }
+    
+    body{
+        font-family: sans-serif;
+        background-image: url(hydra.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-color: rgb(109, 151, 42);
+        margin: 0;
+    }
+    .container{
+        width: 50%;
+    }
+    .section{
+        display: flex;
+        margin: 0;
+        
+    }
+    .form{
+        color: white;
+        background-color: rgba(62, 90, 62, 0.867);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300; 
+        padding: 20px 20px;
+        border: 10px;
+    }
+    li{
+        color: black;
+    }
+    
+    .input-group{
+        width: 100%;
+    }
+    /*
+    form{
+        border: 0px solid#f1f1f1;
+    }
+    
+    input[type=text], input[type=email], input[type=number], input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        display: inline-block;
+        box-sizing: border-box;
+    }*/
