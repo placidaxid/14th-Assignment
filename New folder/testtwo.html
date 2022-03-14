@@ -43,3 +43,110 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY FORM</title>
+    <link href="style.css" rel="styelsheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .main{
+        color:white;
+        text-align: center;
+        padding: 0;
+    }
+    .main h1{
+        padding-top:10px ;
+    }
+    .main p{
+        background-color: red;
+        font-style: italic;
+    }
+    body{
+        font-family: sans-serif;
+        background-image: url(hydra.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-color: rgb(109, 151, 42);
+        margin: 0
+    }
+    .section{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .form{
+        background-image: url(jellyfish.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+        width: 100%;
+        
+    }
+    
+    form{
+        border: 0px solid#f1f1f1;
+    }
+    input[type=text], input[type=email], input[type=number], input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 5px 0;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <div class="main">
+        <h1>CapacityBay Survey Form</h1>
+        <p>Thank you for taking the Time to help us improve this platform</p>
+    </div>
+    <section id="" class="section">
+        <form class="form">
+            <div class="container">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter Your Name">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter Your Email">
+                <label for="age">Age(Optional)</label>
+                <input type="number" placeholder="Enter Your Age">
+                
+                <label for="role">Which Option best describe your current Role?</label>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="text" data-toggle="dropdown">Select current Role?
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a>Student</a></li>
+                      <li><a>Full time Job</a></li>
+                      <li><a>Full Time Learner</a></li>
+                      <li><a>Prefer not to say</a></li>
+                      <li><a>Other</a></li>
+                    </ul>
+                  </div>
+                <label for="role">What is your favorite feature of CapacityBay?</label>
+                <input type="text" placeholder="Challenges">
+                <label for="improvement">Would you recommend CapacityBay to a friend?</label><br>
+                <input type="radio">Definitely <br>
+                <input type="radio">Maybe <br>
+                <input type="radio">Not sure <br><br>
+                <label for="improvement">What would you like to see Improved? (Check all that apply)</label><br>
+                <input type="checkbox">Front-end Projects <br>
+                <input type="checkbox">Back-end Projects    <br>
+                <input type="checkbox">Data Visualization   <br>
+                <input type="checkbox">Challenges   <br>
+                <input type="checkbox">Open source community
+
+            </div>
+        </form>
+    </section>
+</body>
+</html>
